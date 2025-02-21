@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-left .logo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.navbar-center .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin: 1rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .cart-icon,
+.navbar-right .user-icon {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.navbar-right {
+  color: #fff;
+  font-size: 3rem;
+  position: relative;
+  margin-right: 1.5rem;
+}
