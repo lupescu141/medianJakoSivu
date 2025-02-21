@@ -1,7 +1,7 @@
 const Posts = () => {
   return (
     <>
-      <h2>SKATE</h2>
+      <h2>Posts</h2>
     </>
   );
 };

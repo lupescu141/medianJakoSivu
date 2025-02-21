@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 const Layout = () => (
   <div>
     <header>
-      <Navbar />
+      <Navbar></Navbar>
     </header>
     <main>
       <Outlet /> {/* Child routes render here */}

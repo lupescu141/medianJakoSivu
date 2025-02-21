@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar" role="navigation">
       <div className="navbar-left">
-        <a href="/" className="logo">
+        <a href="/home" className="logo">
           SKATE
         </a>
       </div>
@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-right">
-        <a href="/account" className="user-icon">
+        <a href="/login" className="user-icon">
           <FontAwesomeIcon icon={faCircleUser} />
         </a>
       </div>
