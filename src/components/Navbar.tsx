@@ -6,25 +6,22 @@ const Navbar = () => {
   return (
     <nav className="navbar" role="navigation">
       <div className="navbar-left">
-        <a href="/" className="logo">
+        <a href="/home" className="logo">
           SKATE
         </a>
       </div>
       <div className="navbar-center">
         <ul className="nav-links">
           <li>
-            <a href="/products">Home</a>
+            <a href="/home">Home</a>
           </li>
           <li>
-            <a href="/about">Posts</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
+            <a href="/posts">Posts</a>
           </li>
         </ul>
       </div>
       <div className="navbar-right">
-        <a href="/account" className="user-icon">
+        <a href="/login" className="user-icon">
           <FontAwesomeIcon icon={faCircleUser} />
         </a>
       </div>
