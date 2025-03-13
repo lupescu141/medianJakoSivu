@@ -84,4 +84,6 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({open, onClose}) => {
   );
 };
 
+/**/
+
 export default RegistrationForm;
