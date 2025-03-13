@@ -1,29 +1,58 @@
+import {useState} from 'react';
 import './Navbar.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCircleUser} from '@fortawesome/free-solid-svg-icons';
+import {DropdownMenu, DropdownMenuNotLoggedIn} from './DropdownMenu';
 
-const Navbar = () => {
+const Navbar = (profileImg) => {
+  /* Handles the visibility of dropdown vindow */
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  /* will be replaced by user context */
+  const [isLoggedIn, setLoggedIn] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
+
   return (
     <nav className="navbar" role="navigation">
       <div className="navbar-left">
-        <a href="/home" className="logo">
+        <a href="/" className="logo">
           SKATE
         </a>
       </div>
       <div className="navbar-center">
         <ul className="nav-links">
           <li>
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="/posts">Posts</a>
           </li>
         </ul>
       </div>
-      <div className="navbar-right">
-        <a href="/login" className="user-icon">
-          <FontAwesomeIcon icon={faCircleUser} />
-        </a>
+      <div
+        className="navbar-right"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {!isLoggedIn && <FontAwesomeIcon icon={faCircleUser} />}
+        {/* Image will be replaced with ProfileImg prop*/}
+        {isLoggedIn && (
+          <img
+            className="profileImg"
+            src="src\mockup_delete_on_build\shrek.jpg"
+            alt="Profile picture"
+          ></img>
+        )}
+        {/* <DropdownMenuNotLoggegIn /> */}
+        {!isLoggedIn && isDropdownVisible && <DropdownMenuNotLoggedIn />}
+        {/* <DropdownMenu /> */}
+        {isLoggedIn && isDropdownVisible && <DropdownMenu />}
       </div>
     </nav>
   );

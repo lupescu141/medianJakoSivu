@@ -1,0 +1,84 @@
+.fullscreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/skate.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container h1 {
+  font-family: skate;
+  font-size: 5rem;
+  margin-top: 5rem;
+  color: white;
+}
+
+.register {
+  position: absolute;
+  margin-top: 20%;
+  margin-right: 70%;
+  width: 30rem;
+}
+
+.register ul {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.register li p {
+  font-size: 2.5rem;
+  font-family: skate;
+  color: white;
+}
+
+.registerButton {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-family: skate;
+  height: 7rem;
+}
+
+.registerButton:hover {
+  height: 7.2rem;
+  transition: 0.3s;
+}
+
+.login {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 70%;
+  width: 30rem;
+}
+
+.login ul {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.login li p {
+  font-size: 2.5rem;
+  font-family: skate;
+  color: white;
+}
+
+.LoginButton {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  font-family: skate;
+  height: 7rem;
+}
+
+.LoginButton:hover {
+  height: 7.2rem;
+  transition: 0.3s;
+}
