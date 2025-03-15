@@ -10,19 +10,27 @@
 .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .container h1 {
   font-family: skate;
-  font-size: 5rem;
-  margin-top: 5rem;
+  font-size: 4rem;
+  margin-top: 4vh;
   color: white;
 }
 
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 .register {
-  position: absolute;
-  margin-top: 20%;
-  margin-right: 70%;
   width: 30rem;
 }
 
@@ -40,10 +48,12 @@
 }
 
 .registerButton {
-  margin-top: 2rem;
+  align-self: center;
+  margin-top: 1rem;
   font-size: 2.5rem;
   font-family: skate;
   height: 7rem;
+  position: absolute;
 }
 
 .registerButton:hover {
@@ -52,9 +62,6 @@
 }
 
 .login {
-  position: absolute;
-  margin-top: 20%;
-  margin-left: 70%;
   width: 30rem;
 }
 
@@ -72,10 +79,12 @@
 }
 
 .LoginButton {
-  margin-top: 5rem;
+  align-self: center;
+  margin-top: 1rem;
   font-size: 2.5rem;
   font-family: skate;
   height: 7rem;
+  position: absolute;
 }
 
 .LoginButton:hover {
