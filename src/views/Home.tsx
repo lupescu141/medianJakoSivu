@@ -1,10 +1,18 @@
 import './Home.css';
 import RegisterButton from '../components/Registerbutton.tsx';
 import LoginButton from '../components/Loginbutton.tsx';
+import RegisterDialog from '../components/RegisterDialog.tsx';
+import {useState} from 'react';
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="fullscreen">
+      <RegisterDialog
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+      ></RegisterDialog>
       <div className="container">
         <h1>Welcome to the skaters media sharing platform!</h1>
         <div className="register">
