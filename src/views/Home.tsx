@@ -1,5 +1,5 @@
 import './Home.css';
-import RegisterButton from '../components/registerbutton.tsx';
+import RegisterButton from '../components/Registerbutton.tsx';
 import LoginButton from '../components/Loginbutton.tsx';
 
 const Home = () => {

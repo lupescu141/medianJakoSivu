@@ -6,9 +6,6 @@ const DropdownMenu = () => {
           <button>My posts</button>
         </li>
         <li>
-          <button>Assignments</button>
-        </li>
-        <li>
           <button>Logout</button>
         </li>
       </ul>
